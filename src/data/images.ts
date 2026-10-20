@@ -10,7 +10,6 @@ import heroShowroom from "@/assets/hero-showroom.png";
 
 export const IMG = { hero, powerTools, compact, electrical, materials, warehouse, contractors };
 export const HERO_IMAGES = [
-  { src: hero, w: 1920, h: 1088 },
   { src: heroGoldenHour, w: 1365, h: 768 },
   { src: heroShowroom, w: 1365, h: 768 },
 ];

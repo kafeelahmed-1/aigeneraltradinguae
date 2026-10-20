@@ -26,7 +26,9 @@ export function Hero() {
         <img
           key={image.src}
           src={image.src}
-          alt={index === activeImage ? (index === 0 ? t.hero.imgAlt : index === 1 ? t.hero.newImgAlt : t.hero.showroomImgAlt) : ""}
+          alt={
+            index === activeImage ? (index === 0 ? t.hero.newImgAlt : t.hero.showroomImgAlt) : ""
+          }
           aria-hidden={index !== activeImage}
           width={image.w}
           height={image.h}
