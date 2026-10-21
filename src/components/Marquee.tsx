@@ -47,10 +47,10 @@ export function Marquee({
         const Icon = productIcons[i % productIcons.length];
         return (
           <li key={i} className="flex items-center">
-            <span className="flex items-center gap-3 whitespace-nowrap px-6 font-display text-2xl font-bold uppercase md:px-10 md:text-4xl">
+            <span className="flex items-center gap-3 whitespace-nowrap px-7 py-5 font-display text-xl font-bold uppercase transition-colors duration-300 hover:text-primary sm:px-10 sm:py-6 sm:text-2xl md:px-14 md:py-8 md:text-4xl">
               <Icon
                 className={cn(
-                  "h-5 w-5 shrink-0 md:h-6 md:w-6",
+                  "h-4 w-4 shrink-0 transition-transform duration-300 group-hover:scale-110 sm:h-5 sm:w-5 md:h-6 md:w-6",
                   variant === "dark" ? "text-primary" : "text-ink",
                 )}
                 aria-hidden
@@ -69,12 +69,18 @@ export function Marquee({
   return (
     <div
       className={cn(
-        "marquee relative overflow-hidden border-y py-5 md:py-7",
+        "marquee group relative mt-8 overflow-hidden border-y",
         variant === "dark"
-          ? "border-ink-line bg-ink text-ink-foreground"
+          ? "border-ink-line bg-ink text-ink-foreground shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]"
           : "border-ink bg-primary text-primary-foreground",
       )}
     >
+      {variant === "dark" && (
+        <div
+          className="pointer-events-none absolute inset-0 -z-0 bg-[radial-gradient(ellipse_at_50%_0%,hsl(var(--primary)/0.12),transparent_62%)]"
+          aria-hidden
+        />
+      )}
       {/* Track kept LTR so the animation is identical in Arabic; text itself renders natively */}
       <div
         dir="ltr"
@@ -85,6 +91,20 @@ export function Marquee({
         {row(false)}
         {row(true)}
       </div>
+      <div
+        className={cn(
+          "pointer-events-none absolute inset-y-0 start-0 z-10 w-10 bg-gradient-to-r to-transparent sm:w-16",
+          variant === "dark" ? "from-ink" : "from-primary",
+        )}
+        aria-hidden
+      />
+      <div
+        className={cn(
+          "pointer-events-none absolute inset-y-0 end-0 z-10 w-10 bg-gradient-to-l to-transparent sm:w-16",
+          variant === "dark" ? "from-ink" : "from-primary",
+        )}
+        aria-hidden
+      />
     </div>
   );
 }

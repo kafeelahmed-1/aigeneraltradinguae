@@ -14,7 +14,7 @@ const QUICK = [
 ] as const;
 
 export function Footer() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   return (
     <footer className="relative overflow-hidden bg-ink text-ink-foreground">
       <div className="grid-lines pointer-events-none absolute inset-0 opacity-40" aria-hidden />
@@ -56,6 +56,16 @@ export function Footer() {
                   {SITE.email}
                 </a>
               </li>
+              {SITE.departmentEmails.map(({ department, address }) => (
+                <li key={department}>
+                  <a href={`mailto:${address}`} className="break-all hover:text-primary">
+                    <span className="text-ink-muted">
+                      {t.contact.emailDepartments[department]}:{" "}
+                    </span>
+                    {address}
+                  </a>
+                </li>
+              ))}
               <li>{t.contact.addressV}</li>
             </ul>
           </div>
@@ -66,16 +76,24 @@ export function Footer() {
         </div>
         <div
           aria-hidden
-          className="select-none whitespace-nowrap py-6 font-display text-[clamp(1.25rem,6vw,6rem)] font-black leading-[0.8] tracking-tighter text-ink-2"
+          className="select-none whitespace-nowrap py-8 font-display text-[clamp(1.75rem,7vw,7rem)] font-black leading-[0.85] tracking-tighter text-primary md:py-10"
           dir="ltr"
         >
           AINGENERALTRADINGLLC
         </div>
         <div className="flex flex-col items-start justify-between gap-4 border-t border-ink-line py-6 text-sm text-ink-muted sm:flex-row sm:items-center">
           <p>{t.footer.rights}</p>
-          <a href="#top" className="inline-flex items-center gap-2 hover:text-primary">
-            {t.footer.top} <ArrowUp className="h-4 w-4" aria-hidden />
-          </a>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <Link to="/terms" className="hover:text-primary">
+              {lang === "ar" ? "الشروط والأحكام" : "Terms & Conditions"}
+            </Link>
+            <Link to="/privacy" className="hover:text-primary">
+              {lang === "ar" ? "سياسة الخصوصية" : "Privacy Policy"}
+            </Link>
+            <a href="#top" className="inline-flex items-center gap-2 hover:text-primary">
+              {t.footer.top} <ArrowUp className="h-4 w-4" aria-hidden />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -33,17 +33,47 @@ export function Header() {
     document.body.style.overflow = open ? "hidden" : "";
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
-    return () => { window.removeEventListener("keydown", onKey); document.body.style.overflow = ""; };
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
   }, [open]);
 
   return (
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 border-b transition-all duration-300",
-        scrolled || open ? "border-ink-line bg-ink/90 backdrop-blur-md" : "border-transparent bg-ink/40 backdrop-blur-[2px]",
+        scrolled || open
+          ? "border-ink-line bg-ink/95 shadow-lg shadow-black/10 backdrop-blur-md"
+          : "border-transparent bg-ink/40 backdrop-blur-[2px]",
       )}
     >
-      <div className={cn("container-x flex items-center justify-between gap-6 transition-all duration-300", scrolled ? "h-16" : "h-20")}>
+      <div className="border-b border-ink-line/70 bg-ink/90 text-ink-foreground">
+        <div className="container-x flex h-8 items-center justify-between gap-3">
+          <p className="truncate font-mono text-[10px] font-semibold uppercase tracking-[0.1em] text-ink-muted sm:text-xs">
+            <span
+              className="me-2 inline-block h-1.5 w-1.5 rounded-full bg-primary align-middle"
+              aria-hidden
+            />
+            {t.nav.serviceLine}
+          </p>
+          <a
+            href={whatsappLink(t.wa.message)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-whatsapp transition-colors hover:text-ink-foreground sm:text-xs rtl:tracking-normal"
+          >
+            <WhatsAppIcon className="h-4 w-4" />
+            <span className="hidden sm:inline">{t.nav.whatsappCta}</span>
+          </a>
+        </div>
+      </div>
+      <div
+        className={cn(
+          "container-x flex items-center justify-between gap-6 transition-all duration-300",
+          scrolled ? "h-16" : "h-20",
+        )}
+      >
         <Logo onClick={() => setOpen(false)} />
 
         <nav aria-label="Main" className="hidden lg:block">
@@ -53,7 +83,7 @@ export function Header() {
                 <Link
                   to={n.to}
                   activeOptions={{ exact: true }}
-                  className="relative block px-3 py-2 text-sm font-semibold text-ink-foreground/80 transition-colors hover:text-ink-foreground data-[status=active]:text-ink-foreground after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-primary after:transition-transform hover:after:scale-x-100 data-[status=active]:after:scale-x-100 rtl:after:origin-right"
+                  className="relative block rounded-sm px-3 py-2 text-sm font-semibold text-ink-foreground/80 transition-colors hover:bg-ink-foreground/5 hover:text-ink-foreground data-[status=active]:bg-primary/10 data-[status=active]:text-primary after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-primary after:transition-transform hover:after:scale-x-100 data-[status=active]:after:scale-x-100 rtl:after:origin-right"
                 >
                   {t.nav[n.key]}
                 </Link>
@@ -68,7 +98,13 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-1 lg:hidden">
-          <a href={whatsappLink(t.wa.message)} target="_blank" rel="noopener noreferrer" aria-label={t.wa.float} className="grid h-11 w-11 place-items-center text-whatsapp">
+          <a
+            href={whatsappLink(t.wa.message)}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t.wa.float}
+            className="grid h-11 w-11 place-items-center text-whatsapp"
+          >
             <WhatsAppIcon />
           </a>
           <button
@@ -85,7 +121,10 @@ export function Header() {
       </div>
 
       {open && (
-        <div id="mobile-menu" className="h-[calc(100dvh-5rem)] overflow-y-auto border-t border-ink-line bg-ink lg:hidden">
+        <div
+          id="mobile-menu"
+          className="h-[calc(100dvh-7rem)] overflow-y-auto border-t border-ink-line bg-ink lg:hidden"
+        >
           <nav aria-label="Mobile" className="container-x flex flex-col py-6">
             <ul>
               {NAV.map((n, i) => (
@@ -111,10 +150,21 @@ export function Header() {
             </div>
             <div className="mt-6 grid gap-3" onClick={() => setOpen(false)}>
               <QuoteButton className="w-full" />
-              <a href={whatsappLink(t.wa.message)} target="_blank" rel="noopener noreferrer" className="flex min-h-12 items-center justify-center gap-3 border border-ink-line text-sm font-bold uppercase tracking-wider text-ink-foreground rtl:tracking-normal">
+              <a
+                href={whatsappLink(t.wa.message)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex min-h-12 items-center justify-center gap-3 border border-ink-line text-sm font-bold uppercase tracking-wider text-ink-foreground rtl:tracking-normal"
+              >
                 <WhatsAppIcon className="h-5 w-5 text-whatsapp" /> {t.wa.trade}
               </a>
-              <a href={SITE.phoneHref} dir="ltr" className="py-3 text-center font-mono text-sm text-ink-muted">{SITE.phoneDisplay}</a>
+              <a
+                href={SITE.phoneHref}
+                dir="ltr"
+                className="py-3 text-center font-mono text-sm text-ink-muted"
+              >
+                {SITE.phoneDisplay}
+              </a>
             </div>
           </nav>
         </div>

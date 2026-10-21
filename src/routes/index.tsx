@@ -5,6 +5,7 @@ import { Hero } from "@/sections/Hero";
 import { Marquee } from "@/components/Marquee";
 import { Intro } from "@/sections/Intro";
 import { Categories } from "@/sections/Categories";
+import { IndustrySectors } from "@/sections/IndustrySectors";
 import { Showcase } from "@/sections/Showcase";
 import { QuoteRequest } from "@/sections/QuoteRequest";
 
@@ -41,6 +42,7 @@ function Page() {
       <Marquee items={t.marquee1} />
       <Intro />
       <Categories />
+      <IndustrySectors preview />
       <Showcase />
       <QuoteRequest />
     </SiteShell>

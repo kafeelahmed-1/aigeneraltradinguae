@@ -22,6 +22,18 @@ export const CATEGORY_IMAGES = [
   { src: materials, w: 1200, h: 1200 },
 ];
 
+/** Industry order matches translations.industries.items */
+export const INDUSTRY_IMAGES = [
+  { src: compact, w: 1600, h: 1104, pos: "50% 55%" },
+  { src: warehouse, w: 1600, h: 1067, pos: "42% 50%" },
+  { src: electrical, w: 1200, h: 1200, pos: "65% 50%" },
+  { src: contractors, w: 1600, h: 1067, pos: "50% 45%" },
+  { src: compact, w: 1600, h: 1104, pos: "65% 55%" },
+  { src: warehouse, w: 1600, h: 1067, pos: "48% 45%" },
+  { src: materials, w: 1200, h: 1200, pos: "55% 50%" },
+  { src: warehouse, w: 1600, h: 1067, pos: "25% 50%" },
+];
+
 /** Showcase order matches translations.showcase.items; position crops a relevant detail */
 export const SHOWCASE_IMAGES = [
   { src: powerTools, pos: "30% 30%" },

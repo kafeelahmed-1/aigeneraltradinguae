@@ -12,6 +12,8 @@ const en = {
     close: "Close menu",
     whatsapp: "WhatsApp",
     language: "Language",
+    serviceLine: "24/7 Industrial Supplier · UAE-Wide Supply",
+    whatsappCta: "Chat with our trade desk",
   },
   wa: {
     message:
@@ -241,31 +243,58 @@ const en = {
   industries: {
     label: "Industries",
     h2: "Industries We Support",
-    more: "What we supply",
+    sub: "Practical, jobsite-ready supply for the teams building, maintaining and operating the UAE.",
+    allLink: "Explore all industries",
+    suppliesLabel: "Typical supply",
     items: [
       {
-        t: "Construction",
-        d: "Compact machinery, power tools and building materials for structural and finishing works.",
+        title: "Construction",
+        description:
+          "Keep projects moving with dependable equipment and essential materials for structural work, site preparation and finishing.",
+        supplies: "Compaction equipment, power tools, fasteners and building materials.",
       },
       {
-        t: "Facilities & Maintenance",
-        d: "Tools, hardware and electrical consumables for ongoing maintenance teams.",
+        title: "Facilities & Maintenance",
+        description:
+          "Equip maintenance teams for planned works, repairs and day-to-day upkeep across commercial and residential properties.",
+        supplies:
+          "Hand and power tools, electrical consumables, hardware and replacement essentials.",
       },
       {
-        t: "Electrical Installation",
-        d: "Cables, PVC pipes, conduits and installation essentials.",
+        title: "Electrical Contracting",
+        description:
+          "Support installation crews with the core products they need for reliable electrical and containment work.",
+        supplies: "Cables, PVC pipes, conduits, accessories and installation tools.",
       },
       {
-        t: "Contracting",
-        d: "Multi-category supply for general and specialist contractors from one desk.",
+        title: "General Contracting",
+        description:
+          "Simplify procurement across trades with a single point of contact for varied project and site requirements.",
+        supplies: "Power tools, site equipment, electrical supplies and construction hardware.",
       },
       {
-        t: "Infrastructure",
-        d: "Compaction equipment and site hardware for groundworks and civil works.",
+        title: "Infrastructure & Civil Works",
+        description:
+          "Prepare and support civil works with practical equipment and durable essentials for demanding site conditions.",
+        supplies: "Plate compactors, rollers, drilling equipment and site hardware.",
       },
       {
-        t: "General Industrial Projects",
-        d: "Industrial hardware and general trade supplies for project requirements.",
+        title: "Industrial & Manufacturing",
+        description:
+          "Source dependable tools and general industrial requirements for production areas, workshops and project teams.",
+        supplies: "Workshop tools, fasteners, electrical products and industrial hardware.",
+      },
+      {
+        title: "Fit-out & Interior Works",
+        description:
+          "Help fit-out teams complete installation and finishing works with the right tools and supporting materials.",
+        supplies: "Drills, grinders, hand tools, fixings and electrical installation products.",
+      },
+      {
+        title: "Warehousing & Logistics",
+        description:
+          "Support warehouse setup, routine upkeep and operational projects with dependable trade essentials.",
+        supplies: "Maintenance tools, electrical consumables, hardware and site equipment.",
       },
     ],
   },
@@ -283,6 +312,20 @@ const en = {
       { k: "Quote response", v: "Within 24 hours" },
     ],
   },
+  aboutStory: {
+    label: "Who We Are",
+    h2: "A UAE trade partner built for project delivery.",
+    intro:
+      "AIN General Trading LLC is a Sharjah-based trading company supporting contractors, developers, maintenance teams and industrial buyers across the UAE with practical, project-ready supply.",
+    intro2:
+      "From power tools and electrical essentials to compact machinery and construction hardware, we help project teams source the right materials with faster response times, clearer commercial support, and dependable follow-through from enquiry to delivery.",
+    points: [
+      "Registered UAE trading operations with a contractor-first mindset",
+      "Sharjah-based supply desk serving active project sites across the Emirates",
+      "Focused on availability, speed, and dependable delivery for live jobs",
+      "Built for construction, maintenance, industrial and fit-out requirements",
+    ],
+  },
   contact: {
     label: "Contact / Trade Desk",
     h2: "Ready for Your Next Site Requirement?",
@@ -294,6 +337,13 @@ const en = {
     directions: "Get Directions",
     phone: "Phone",
     email: "Email",
+    emailDepartmentsH: "Reach the Right Team",
+    emailDepartmentsSub: "Contact our team directly and we’ll get back to you as soon as possible.",
+    emailDepartments: {
+      sales: "Sales",
+      finance: "Finance",
+      enquiries: "General Enquiries",
+    },
     hours: "Hours",
     hoursV: "Sat–Thu · 08:00 – 18:00 GST",
     call: "Call Trade Desk",
@@ -336,7 +386,7 @@ const en = {
     about: {
       label: "About",
       title: "UAE's Direct-Response Trade Supplier",
-      sub: "A Sharjah-based trade desk supplying construction, maintenance and industrial requirements.",
+      sub: "A Sharjah-based trading company supporting construction, maintenance, electrical and industrial projects across the Emirates.",
     },
     industries: {
       label: "Projects / Industries",
@@ -372,6 +422,8 @@ const ar: Dict = {
     close: "إغلاق القائمة",
     whatsapp: "واتساب",
     language: "اللغة",
+    serviceLine: "مورد صناعي على مدار الساعة · توريد في جميع أنحاء الإمارات",
+    whatsappCta: "تواصل مع مكتب التجارة",
   },
   wa: {
     message: "مرحباً AIN General Trading، أود الاستفسار عن منتجاتكم وطلب عرض سعر.",
@@ -589,14 +641,54 @@ const ar: Dict = {
   industries: {
     label: "القطاعات",
     h2: "القطاعات التي ندعمها",
-    more: "ما نورّده",
+    sub: "توريد عملي وجاهز لمواقع العمل للفرق التي تبني مرافق الإمارات وتشغّلها وتحافظ عليها.",
+    allLink: "استكشف جميع القطاعات",
+    suppliesLabel: "أبرز المستلزمات",
     items: [
-      { t: "البناء والتشييد", d: "معدات مدمجة وعدد كهربائية ومواد بناء لأعمال الهيكل والتشطيب." },
-      { t: "المرافق والصيانة", d: "عدد ومستلزمات صناعية وكهربائية لفرق الصيانة المستمرة." },
-      { t: "التمديدات الكهربائية", d: "كابلات وأنابيب PVC ومواسير تمديد ومستلزمات التركيب." },
-      { t: "المقاولات", d: "توريد متعدد الفئات للمقاولين العامين والمتخصصين من مكتب واحد." },
-      { t: "البنية التحتية", d: "معدات الدك وعدد الموقع لأعمال الحفر والأعمال المدنية." },
-      { t: "المشاريع الصناعية العامة", d: "عدد صناعية ولوازم تجارية عامة لمتطلبات المشاريع." },
+      {
+        title: "البناء والتشييد",
+        description:
+          "نساعد على استمرار المشاريع بتوفير معدات ومواد أساسية لأعمال الهيكل وتجهيز المواقع والتشطيبات.",
+        supplies: "معدات الدك، وعدد كهربائية، ومثبّتات، ومواد بناء.",
+      },
+      {
+        title: "المرافق والصيانة",
+        description:
+          "نجهّز فرق الصيانة للأعمال المجدولة والإصلاحات والصيانة اليومية للمباني التجارية والسكنية.",
+        supplies: "عدد يدوية وكهربائية، ومستهلكات كهربائية، وعدد صناعية، ومواد للاستبدال.",
+      },
+      {
+        title: "المقاولات الكهربائية",
+        description: "ندعم فرق التركيب بالمستلزمات الأساسية لأعمال الكهرباء وأنظمة التمديدات.",
+        supplies: "كابلات، وأنابيب PVC، ومواسير تمديد، وملحقات، وعدد تركيب.",
+      },
+      {
+        title: "المقاولات العامة",
+        description:
+          "نبسّط التوريد لمختلف التخصصات عبر جهة واحدة لمتطلبات المشاريع والمواقع المتنوعة.",
+        supplies: "عدد كهربائية، ومعدات مواقع، ومستلزمات كهربائية، وعدد البناء.",
+      },
+      {
+        title: "البنية التحتية والأعمال المدنية",
+        description:
+          "نوفّر مستلزمات عملية ومعدات متينة لأعمال الحفر والإنشاءات المدنية وظروف المواقع الصعبة.",
+        supplies: "مدكّات ألواح، وهراسات، ومعدات حفر، وعدد المواقع.",
+      },
+      {
+        title: "الصناعة والتصنيع",
+        description: "نوفر عدداً موثوقة واحتياجات صناعية عامة لفرق الإنتاج والورش والمشاريع.",
+        supplies: "عدد الورش، ومثبّتات، ومنتجات كهربائية، وعدد صناعية.",
+      },
+      {
+        title: "أعمال التجهيز والديكور الداخلي",
+        description: "ندعم فرق التجهيز الداخلي بأدوات ومواد مساندة لأعمال التركيب والتشطيب.",
+        supplies: "مثاقب، وصواريخ تجليخ، وعدد يدوية، ومثبّتات، ومستلزمات تركيب كهربائية.",
+      },
+      {
+        title: "المستودعات والخدمات اللوجستية",
+        description: "نساند تجهيز المستودعات وصيانتها ومشاريعها التشغيلية بمستلزمات تجارية موثوقة.",
+        supplies: "عدد الصيانة، ومستهلكات كهربائية، وعدد صناعية، ومعدات مواقع.",
+      },
     ],
   },
   about: {
@@ -613,6 +705,20 @@ const ar: Dict = {
       { k: "الرد على الطلبات", v: "خلال 24 ساعة" },
     ],
   },
+  aboutStory: {
+    label: "من نحن",
+    h2: "شريك تجاري في الإمارات مصمم لتسليم المشاريع.",
+    intro:
+      "تعمل شركة AIN General Trading LLC من الشارقة كجهة تجارية داعمة للمقاولين والمطورين وفرق الصيانة والمشترين الصناعيين في جميع أنحاء الإمارات.",
+    intro2:
+      "من العدد الكهربائية ومواد البناء إلى المعدات المدمجة والمستلزمات الصناعية، نساعد فرق المشاريع على الحصول على ما تحتاجه بسرعة أكبر، واستجابة تجارية أوضح، وتوريد موثوق من أول الاستفسار وحتى تسليم الموقع.",
+    points: [
+      "وجود تجاري موثوق في دولة الإمارات مع تركيز واضح على المقاولين",
+      "مكتب توريد في الشارقة يخدم مواقع مشاريع نشطة في جميع الإمارات",
+      "نهج يركز على التوفر، السرعة، والتسليم الموثوق للمشاريع الحالية",
+      "مصمم لدعم البناء والصيانة والديكور الداخلي والقطاع الصناعي",
+    ],
+  },
   contact: {
     label: "تواصل / مكتب التجارة",
     h2: "جاهزون لمتطلبات موقعك القادم؟",
@@ -624,6 +730,13 @@ const ar: Dict = {
     directions: "احصل على الاتجاهات",
     phone: "الهاتف",
     email: "البريد الإلكتروني",
+    emailDepartmentsH: "تواصل مع الفريق المناسب",
+    emailDepartmentsSub: "راسل فريقنا مباشرة وسنرد عليك في أقرب وقت ممكن.",
+    emailDepartments: {
+      sales: "المبيعات",
+      finance: "المالية",
+      enquiries: "استفسارات عامة",
+    },
     hours: "ساعات العمل",
     hoursV: "السبت – الخميس · 08:00 – 18:00 بتوقيت الخليج",
     call: "اتصل بمكتب التجارة",
@@ -666,7 +779,7 @@ const ar: Dict = {
     about: {
       label: "من نحن",
       title: "المورّد التجاري سريع الاستجابة في الإمارات",
-      sub: "مكتب تجارة في الشارقة يورّد متطلبات البناء والصيانة والصناعة.",
+      sub: "شركة تجارية في الشارقة تدعم مشاريع البناء والصيانة والكهرباء والصناعة في جميع أنحاء الإمارات.",
     },
     industries: {
       label: "المشاريع / القطاعات",
