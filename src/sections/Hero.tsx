@@ -46,7 +46,17 @@ export function Hero() {
         <div className="max-w-4xl">
           <p className="hero-in label-mono flex items-center gap-3 text-primary" style={d(0)}>
             <span className="h-2 w-2 bg-primary" aria-hidden /> {t.hero.label}
-            <span aria-hidden="true">🇦🇪</span>
+            <svg
+              className="h-3 w-[18px] shrink-0"
+              viewBox="0 0 18 12"
+              role="img"
+              aria-label="United Arab Emirates flag"
+            >
+              <rect width="18" height="4" fill="#00732f" />
+              <rect y="4" width="18" height="4" fill="#fff" />
+              <rect y="8" width="18" height="4" fill="#000" />
+              <rect width="5" height="12" fill="#f00" />
+            </svg>
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.6rem,8.5vw,7.5rem)] font-black uppercase leading-[0.88] rtl:normal-case rtl:leading-[1.15]">
             <span className="hero-in block" style={d(120)}>{t.hero.h1a}</span>
