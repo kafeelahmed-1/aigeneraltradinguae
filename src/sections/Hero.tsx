@@ -46,6 +46,7 @@ export function Hero() {
         <div className="max-w-4xl">
           <p className="hero-in label-mono flex items-center gap-3 text-primary" style={d(0)}>
             <span className="h-2 w-2 bg-primary" aria-hidden /> {t.hero.label}
+            <span aria-hidden="true">🇦🇪</span>
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.6rem,8.5vw,7.5rem)] font-black uppercase leading-[0.88] rtl:normal-case rtl:leading-[1.15]">
             <span className="hero-in block" style={d(120)}>{t.hero.h1a}</span>

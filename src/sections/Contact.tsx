@@ -39,7 +39,7 @@ export function Contact() {
           <SectionLabel>{t.contact.emailDepartmentsH}</SectionLabel>
           <p className="mt-4 text-ink-muted">{t.contact.emailDepartmentsSub}</p>
         </div>
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2">
           {SITE.departmentEmails.map(({ department, address }) => (
             <a
               key={department}

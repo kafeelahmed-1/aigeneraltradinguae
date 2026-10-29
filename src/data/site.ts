@@ -5,9 +5,7 @@ export const SITE = {
   whatsappNumber: "971564891899",
   email: "aintradegen@gmail.com",
   departmentEmails: [
-    { department: "sales", address: "sales@aingeneraltrading.com" },
-    { department: "finance", address: "finance@aingeneraltrading.com" },
-    { department: "enquiries", address: "enquiries@aingeneraltrading.com" },
+    { department: "enquiries", address: "info@aingeneraltrading.com" },
   ],
   url: "https://aingeneraltrading.com",
 } as const;

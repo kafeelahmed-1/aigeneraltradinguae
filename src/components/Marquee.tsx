@@ -47,7 +47,7 @@ export function Marquee({
         const Icon = productIcons[i % productIcons.length];
         return (
           <li key={i} className="flex items-center">
-            <span className="flex items-center gap-3 whitespace-nowrap px-7 py-5 font-display text-xl font-bold uppercase transition-colors duration-300 hover:text-primary sm:px-10 sm:py-6 sm:text-2xl md:px-14 md:py-8 md:text-4xl">
+            <span className="flex items-center gap-3 whitespace-nowrap px-8 py-5 font-display text-xl font-bold uppercase transition-colors duration-300 hover:text-primary sm:px-12 sm:py-6 sm:text-2xl md:px-20 md:py-8 md:text-4xl lg:px-24">
               <Icon
                 className={cn(
                   "h-4 w-4 shrink-0 transition-transform duration-300 group-hover:scale-110 sm:h-5 sm:w-5 md:h-6 md:w-6",

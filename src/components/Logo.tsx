@@ -13,8 +13,8 @@ export function Logo({ onClick }: { onClick?: () => void }) {
       aria-label="AIN General Trading LLC — Home"
     >
       <img
-        src="/ain-logo.png"
-        className="h-10 w-auto max-w-[60vw] object-contain"
+        src="/ain-general-trading-logo.png"
+        className="h-16 w-auto max-w-[36vw] object-contain sm:h-18"
         alt="AIN General Trading LLC"
       />
     </Link>

@@ -8,9 +8,7 @@ describe("contact rules", () => {
 
   it("provides direct department email addresses", () => {
     expect(SITE.departmentEmails.map(({ address }) => address)).toEqual([
-      "sales@aingeneraltrading.com",
-      "finance@aingeneraltrading.com",
-      "enquiries@aingeneraltrading.com",
+      "info@aingeneraltrading.com",
     ]);
   });
 

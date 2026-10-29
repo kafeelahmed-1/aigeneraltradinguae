@@ -49,7 +49,7 @@ export function Header() {
       )}
     >
       <div className="border-b border-ink-line/70 bg-ink/90 text-ink-foreground">
-        <div className="container-x flex h-8 items-center justify-between gap-3">
+        <div className="container-nav flex h-8 items-center justify-between gap-3">
           <p className="truncate font-mono text-[10px] font-semibold uppercase tracking-[0.1em] text-ink-muted sm:text-xs">
             <span
               className="me-2 inline-block h-1.5 w-1.5 rounded-full bg-primary align-middle"
@@ -70,8 +70,8 @@ export function Header() {
       </div>
       <div
         className={cn(
-          "container-x flex items-center justify-between gap-6 transition-all duration-300",
-          scrolled ? "h-16" : "h-20",
+          "container-nav flex items-center justify-between gap-6 transition-all duration-300",
+          scrolled ? "h-20" : "h-24",
         )}
       >
         <Logo onClick={() => setOpen(false)} />
