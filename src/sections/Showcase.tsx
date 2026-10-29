@@ -38,19 +38,25 @@ export function Showcase() {
         {t.showcase.items.map((p, i) => {
           const img = SHOWCASE_IMAGES[i]!;
           return (
-            <article key={p.type} className="group relative w-[78vw] shrink-0 snap-start bg-ink text-ink-foreground sm:w-[22rem] lg:w-[26rem]">
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <img src={img.src} alt={p.type} width={800} height={1000} loading="lazy" style={{ objectPosition: img.pos }} className="h-full w-full scale-[1.35] object-cover transition-transform duration-[1.2s] group-hover:scale-[1.45]" />
-                <span className="label-mono absolute start-4 top-4 bg-primary px-2 py-1 text-primary-foreground">{p.cat}</span>
-                <span className="absolute end-4 top-4 font-mono text-xs text-ink-foreground/70" dir="ltr">{String(i + 1).padStart(2, "0")}/{String(t.showcase.items.length).padStart(2, "0")}</span>
-              </div>
-              <div className="flex items-end justify-between gap-4 border-t-2 border-primary p-5">
-                <h3 className="font-display text-2xl font-bold leading-tight">{p.type}</h3>
-                <Link to="/contact" hash="rfq" className="shrink-0 label-mono inline-flex items-center gap-2 text-primary after:absolute after:inset-0 group-hover:text-ink-foreground">
-                  {t.showcase.request} <Arrow className="h-3.5 w-3.5" />
-                </Link>
-              </div>
-            </article>
+            <Reveal
+              key={p.type}
+              delay={i * 100}
+              className="w-[78vw] shrink-0 snap-start sm:w-[22rem] lg:w-[26rem]"
+            >
+              <article className="group relative h-full bg-ink text-ink-foreground transition-[transform,box-shadow] duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_24px_70px_-28px_rgba(255,102,0,0.5)]">
+                <div className="relative aspect-[4/5] overflow-hidden">
+                  <img src={img.src} alt={p.type} width={800} height={1000} loading="lazy" style={{ objectPosition: img.pos }} className="h-full w-full scale-[1.35] object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-[1.48]" />
+                  <span className="label-mono absolute start-4 top-4 bg-primary px-2 py-1 text-primary-foreground">{p.cat}</span>
+                  <span className="absolute end-4 top-4 font-mono text-xs text-ink-foreground/70" dir="ltr">{String(i + 1).padStart(2, "0")}/{String(t.showcase.items.length).padStart(2, "0")}</span>
+                </div>
+                <div className="flex items-end justify-between gap-4 border-t-2 border-primary p-5">
+                  <h3 className="font-display text-2xl font-bold leading-tight">{p.type}</h3>
+                  <Link to="/contact" hash="rfq" className="shrink-0 label-mono inline-flex items-center gap-2 text-primary after:absolute after:inset-0 group-hover:text-ink-foreground">
+                    {t.showcase.request} <Arrow className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1 rtl:-scale-x-100 rtl:group-hover:-translate-x-1" />
+                  </Link>
+                </div>
+              </article>
+            </Reveal>
           );
         })}
         <div className="w-1 shrink-0" aria-hidden />
