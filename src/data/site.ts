@@ -3,10 +3,7 @@ export const SITE = {
   phoneDisplay: "+971 56 489 1899",
   phoneHref: "tel:+971564891899",
   whatsappNumber: "971564891899",
-  email: "aintradegen@gmail.com",
-  departmentEmails: [
-    { department: "enquiries", address: "info@aingeneraltrading.com" },
-  ],
+  email: "sales@aingeneraltrading.com",
   url: "https://aingeneraltrading.com",
 } as const;
 

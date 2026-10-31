@@ -78,7 +78,7 @@ export const LEGAL = {
         {
           title: "9. Contact",
           paragraphs: [
-            "AIN General Trading LLC\nSharjah Media City, Sharjah, United Arab Emirates\nEmail: aintradegen@gmail.com\nPhone: +971 56 489 1899",
+            "AIN General Trading LLC\nSharjah Media City, Sharjah, United Arab Emirates\nEmail: sales@aingeneraltrading.com\nPhone: +971 56 489 1899",
           ],
         },
       ],
@@ -92,7 +92,7 @@ export const LEGAL = {
         {
           title: "1. Who is responsible",
           paragraphs: [
-            'AIN General Trading LLC ("AIN", "we", "us" or "our"), Sharjah Media City, Sharjah, UAE, is responsible for personal information handled through this website and our trade enquiries, to the extent applicable law treats AIN as the controller. Contact us at aintradegen@gmail.com or +971 56 489 1899 with privacy questions.',
+            'AIN General Trading LLC ("AIN", "we", "us" or "our"), Sharjah Media City, Sharjah, UAE, is responsible for personal information handled through this website and our trade enquiries, to the extent applicable law treats AIN as the controller. Contact us at sales@aingeneraltrading.com or +971 56 489 1899 with privacy questions.',
             "We handle personal information in accordance with applicable UAE data-protection requirements, which may include Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data and any applicable free-zone data-protection rules. Which rules apply depends on the establishment and processing involved.",
           ],
         },
@@ -128,7 +128,7 @@ export const LEGAL = {
           title: "6. Your choices and rights",
           paragraphs: [
             "Depending on the law that applies, you may have rights to request access to, correction or deletion of personal information, object to or restrict certain processing, withdraw consent where processing relies on consent, or raise a complaint with the competent regulator. These rights are subject to legal conditions and exceptions.",
-            'To make a request, email aintradegen@gmail.com with "Privacy request" in the subject. We may need to verify your identity and will respond as required by applicable law. You can also clear the "ain-lang" item in your browser\'s local storage to remove the saved language preference.',
+            'To make a request, email sales@aingeneraltrading.com with "Privacy request" in the subject. We may need to verify your identity and will respond as required by applicable law. You can also clear the "ain-lang" item in your browser\'s local storage to remove the saved language preference.',
           ],
         },
         {
@@ -142,7 +142,7 @@ export const LEGAL = {
           title: "8. Updates and contact",
           paragraphs: [
             "We may revise this policy when our practices or legal requirements change. The current version and its update date will be published on this page.",
-            "AIN General Trading LLC\nSharjah Media City, Sharjah, United Arab Emirates\nEmail: aintradegen@gmail.com\nPhone: +971 56 489 1899",
+            "AIN General Trading LLC\nSharjah Media City, Sharjah, United Arab Emirates\nEmail: sales@aingeneraltrading.com\nPhone: +971 56 489 1899",
           ],
         },
       ],
@@ -214,7 +214,7 @@ export const LEGAL = {
         {
           title: "٩. التواصل",
           paragraphs: [
-            "AIN General Trading LLC\nمدينة الشارقة للإعلام، الشارقة، الإمارات العربية المتحدة\nالبريد الإلكتروني: aintradegen@gmail.com\nالهاتف: +971 56 489 1899",
+            "AIN General Trading LLC\nمدينة الشارقة للإعلام، الشارقة، الإمارات العربية المتحدة\nالبريد الإلكتروني: sales@aingeneraltrading.com\nالهاتف: +971 56 489 1899",
           ],
         },
       ],
@@ -228,7 +228,7 @@ export const LEGAL = {
         {
           title: "١. الجهة المسؤولة",
           paragraphs: [
-            "تتحمل AIN General Trading LLC («AIN» أو «نحن»)، مدينة الشارقة للإعلام، الشارقة، الإمارات العربية المتحدة، مسؤولية المعلومات الشخصية التي يتم التعامل معها عبر هذا الموقع واستفسارات التجارة، بالقدر الذي يعدّها فيه القانون المطبق جهة تحكم. للاستفسارات المتعلقة بالخصوصية، تواصل معنا عبر aintradegen@gmail.com أو +971 56 489 1899.",
+            "تتحمل AIN General Trading LLC («AIN» أو «نحن»)، مدينة الشارقة للإعلام، الشارقة، الإمارات العربية المتحدة، مسؤولية المعلومات الشخصية التي يتم التعامل معها عبر هذا الموقع واستفسارات التجارة، بالقدر الذي يعدّها فيه القانون المطبق جهة تحكم. للاستفسارات المتعلقة بالخصوصية، تواصل معنا عبر sales@aingeneraltrading.com أو +971 56 489 1899.",
             "نتعامل مع المعلومات الشخصية وفق متطلبات حماية البيانات السارية في الإمارات، والتي قد تشمل المرسوم بقانون اتحادي رقم 45 لسنة 2021 بشأن حماية البيانات الشخصية وأي قواعد لحماية البيانات في المناطق الحرة تنطبق. ويتوقف تحديد القواعد السارية على المنشأة والمعالجة المعنية.",
           ],
         },
@@ -264,7 +264,7 @@ export const LEGAL = {
           title: "٦. خياراتك وحقوقك",
           paragraphs: [
             "وفقاً للقانون المطبق، قد يحق لك طلب الوصول إلى المعلومات الشخصية أو تصحيحها أو حذفها، أو الاعتراض على معالجة معينة أو تقييدها، أو سحب الموافقة عندما تستند المعالجة إليها، أو تقديم شكوى إلى الجهة الرقابية المختصة. وتخضع هذه الحقوق للشروط والاستثناءات القانونية.",
-            "لتقديم طلب، أرسل رسالة إلى aintradegen@gmail.com واجعل عنوانها «طلب خصوصية». وقد نحتاج إلى التحقق من هويتك وسنرد وفق القانون المطبق. ويمكنك أيضاً حذف عنصر «ain-lang» من التخزين المحلي في متصفحك لإزالة تفضيل اللغة المحفوظ.",
+            "لتقديم طلب، أرسل رسالة إلى sales@aingeneraltrading.com واجعل عنوانها «طلب خصوصية». وقد نحتاج إلى التحقق من هويتك وسنرد وفق القانون المطبق. ويمكنك أيضاً حذف عنصر «ain-lang» من التخزين المحلي في متصفحك لإزالة تفضيل اللغة المحفوظ.",
           ],
         },
         {
@@ -278,7 +278,7 @@ export const LEGAL = {
           title: "٨. التعديلات والتواصل",
           paragraphs: [
             "قد نراجع هذه السياسة عند تغير ممارساتنا أو المتطلبات القانونية. وستُنشر النسخة الحالية وتاريخ تحديثها على هذه الصفحة.",
-            "AIN General Trading LLC\nمدينة الشارقة للإعلام، الشارقة، الإمارات العربية المتحدة\nالبريد الإلكتروني: aintradegen@gmail.com\nالهاتف: +971 56 489 1899",
+            "AIN General Trading LLC\nمدينة الشارقة للإعلام، الشارقة، الإمارات العربية المتحدة\nالبريد الإلكتروني: sales@aingeneraltrading.com\nالهاتف: +971 56 489 1899",
           ],
         },
       ],

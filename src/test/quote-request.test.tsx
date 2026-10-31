@@ -36,6 +36,6 @@ describe("quote request", () => {
 
     expect(screen.getByText("Your RFQ is ready to send")).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /send on whatsapp/i })).toHaveAttribute("href", expect.stringContaining("https://wa.me/"));
-    expect(screen.getByRole("link", { name: /send by email/i })).toHaveAttribute("href", expect.stringContaining("mailto:aintradegen@gmail.com"));
+    expect(screen.getByRole("link", { name: /send by email/i })).toHaveAttribute("href", expect.stringContaining("mailto:sales@aingeneraltrading.com"));
   });
 });

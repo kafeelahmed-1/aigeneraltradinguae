@@ -9,12 +9,12 @@ export const Route = createFileRoute("/contact")({
       { title: "Contact | Request a Quote | AIN General Trading" },
       {
         name: "description",
-        content: "Call +971 56 489 1899, email aintradegen@gmail.com or WhatsApp the trade desk.",
+        content: "For product availability, quotations and all sales enquiries, email sales@aingeneraltrading.com or call +971 56 489 1899.",
       },
       { property: "og:title", content: "Contact | Request a Quote | AIN General Trading" },
       {
         property: "og:description",
-        content: "Call +971 56 489 1899, email aintradegen@gmail.com or WhatsApp the trade desk.",
+        content: "For product availability, quotations and all sales enquiries, email sales@aingeneraltrading.com or call +971 56 489 1899.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

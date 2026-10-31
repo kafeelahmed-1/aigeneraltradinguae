@@ -56,16 +56,6 @@ export function Footer() {
                   {SITE.email}
                 </a>
               </li>
-              {SITE.departmentEmails.map(({ department, address }) => (
-                <li key={department}>
-                  <a href={`mailto:${address}`} className="break-all hover:text-primary">
-                    <span className="text-ink-muted">
-                      {t.contact.emailDepartments[department]}:{" "}
-                    </span>
-                    {address}
-                  </a>
-                </li>
-              ))}
               <li>{t.contact.addressV}</li>
             </ul>
           </div>

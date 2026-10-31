@@ -62,7 +62,7 @@ Existing contact information:
 AIN General Trading LLC
 Sharjah Media City, Sharjah, UAE
 Phone: +971 56 489 1899
-Email: aintradegen@gmail.com
+Email: sales@aingeneraltrading.com
 Hours: Sat-Thu 08:00 - 18:00 GST
 
 WhatsApp must use:

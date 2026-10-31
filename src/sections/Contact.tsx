@@ -1,5 +1,4 @@
 import { useI18n } from "@/i18n/LanguageProvider";
-import { Mail } from "lucide-react";
 import { SITE } from "@/data/site";
 import { SectionLabel } from "@/components/SectionLabel";
 import { QuoteButton, WhatsAppButton, btn } from "@/components/Buttons";
@@ -33,33 +32,6 @@ export function Contact() {
             </div>
           ))}
         </dl>
-      </div>
-      <div className="container-x mt-16 md:mt-20">
-        <div className="mb-8 max-w-2xl">
-          <SectionLabel>{t.contact.emailDepartmentsH}</SectionLabel>
-          <p className="mt-4 text-ink-muted">{t.contact.emailDepartmentsSub}</p>
-        </div>
-        <div className="grid gap-4 md:grid-cols-2">
-          {SITE.departmentEmails.map(({ department, address }) => (
-            <a
-              key={department}
-              href={`mailto:${address}`}
-              className="group flex items-center gap-4 border border-ink-line bg-ink-2/50 p-5 transition-colors hover:border-primary/70 md:p-6"
-            >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-ink-line text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <Mail className="h-5 w-5" aria-hidden />
-              </span>
-              <span className="min-w-0">
-                <span className="label-mono block text-ink-muted">
-                  {t.contact.emailDepartments[department]}
-                </span>
-                <span className="mt-1 block break-all text-sm text-ink-foreground transition-colors group-hover:text-primary sm:text-base">
-                  {address}
-                </span>
-              </span>
-            </a>
-          ))}
-        </div>
       </div>
     </section>
   );
